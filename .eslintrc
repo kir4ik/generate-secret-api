@@ -1,0 +1,48 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "browser": false,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "no-tabs": "error",
+    "eol-last": "error",
+    "no-trailing-spaces": "error",
+    "quotes": ["error", "single"],
+    "strict": [0, "global"],
+    "no-underscore-dangle": 0,
+    "no-loop-func": 0,
+    "no-undef": 2,
+    "consistent-return": 0,
+    "no-console": [2, { "allow": ["info", "warn", "error"] }],
+    "prefer-const": [2, { "destructuring": "all" }],
+    "no-multiple-empty-lines": [2, { "max": 1 }],
+    "max-len": [2, 120, 4],
+    "comma-dangle": [2, "never"],
+    "camelcase": 0,
+    "no-unused-vars": [2, { "vars": "all", "args": "after-used" }],
+    "jsx-quotes": [1, "prefer-double"],
+    "no-case-declarations": 0,
+    "keyword-spacing": [2, { "before": true, "after": true }],
+    "space-before-blocks": 2,
+    "semi": 2,
+    "spaced-comment": 2,
+    "new-cap": 2,
+    "no-multi-spaces": 2,
+    "one-var": [2, "never"],
+    "padded-blocks": [2, "never"],
+    "padding-line-between-statements": [2, { "blankLine": "always", "prev": "if", "next": "*" }],
+    "object-curly-spacing": [2, "never"],
+    "no-else-return": [2, { "allowElseIf": false }],
+    "generator-star-spacing": [2, { "before": false, "after": true }],
+    "curly": 2
+  }
+}
